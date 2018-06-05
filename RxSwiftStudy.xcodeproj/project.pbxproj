@@ -22,6 +22,10 @@
 		FC191B42209C1096005ED87D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC191B41209C1096005ED87D /* RxSwift.framework */; };
 		FC191B45209C111E005ED87D /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC191B44209C111E005ED87D /* Music.swift */; };
 		FC191B47209C38A2005ED87D /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC191B46209C38A2005ED87D /* Tool.swift */; };
+		FC779D0A20C4E7DE007ECF93 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC779D0920C4E7DE007ECF93 /* MainVC.swift */; };
+		FC779D0C20C50DB5007ECF93 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC779D0B20C50DB5007ECF93 /* SecondVC.swift */; };
+		FC779D0E20C5363F007ECF93 /* MoyaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC779D0D20C5363F007ECF93 /* MoyaVC.swift */; };
+		FCB17D9A20C0D8E4003CAFF1 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB17D9920C0D8E4003CAFF1 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		FC191B41209C1096005ED87D /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC191B44209C111E005ED87D /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		FC191B46209C38A2005ED87D /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		FC779D0920C4E7DE007ECF93 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		FC779D0B20C50DB5007ECF93 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		FC779D0D20C5363F007ECF93 /* MoyaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaVC.swift; sourceTree = "<group>"; };
+		FCB17D9920C0D8E4003CAFF1 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,12 +162,16 @@
 				FC191B43209C1109005ED87D /* M */,
 				FC191B3C209C102C005ED87D /* VM */,
 				FC191B0E209C0FB7005ED87D /* AppDelegate.swift */,
+				FC779D0920C4E7DE007ECF93 /* MainVC.swift */,
 				FC191B10209C0FB7005ED87D /* ViewController.swift */,
+				FC779D0B20C50DB5007ECF93 /* SecondVC.swift */,
+				FC779D0D20C5363F007ECF93 /* MoyaVC.swift */,
 				FC191B12209C0FB7005ED87D /* Main.storyboard */,
 				FC191B15209C0FB7005ED87D /* Assets.xcassets */,
 				FC191B17209C0FB7005ED87D /* LaunchScreen.storyboard */,
 				FC191B1A209C0FB7005ED87D /* Info.plist */,
 				FC191B46209C38A2005ED87D /* Tool.swift */,
+				FCB17D9920C0D8E4003CAFF1 /* Operators.swift */,
 			);
 			path = RxSwiftStudy;
 			sourceTree = "<group>";
@@ -390,13 +402,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -414,9 +440,13 @@
 			files = (
 				FC191B11209C0FB7005ED87D /* ViewController.swift in Sources */,
 				FC191B0F209C0FB7005ED87D /* AppDelegate.swift in Sources */,
+				FC779D0E20C5363F007ECF93 /* MoyaVC.swift in Sources */,
 				FC191B3E209C104C005ED87D /* MusicListViewModel.swift in Sources */,
 				FC191B47209C38A2005ED87D /* Tool.swift in Sources */,
 				FC191B45209C111E005ED87D /* Music.swift in Sources */,
+				FCB17D9A20C0D8E4003CAFF1 /* Operators.swift in Sources */,
+				FC779D0C20C50DB5007ECF93 /* SecondVC.swift in Sources */,
+				FC779D0A20C4E7DE007ECF93 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,10 +624,7 @@
 				DEVELOPMENT_TEAM = 436G22W3WB;
 				INFOPLIST_FILE = RxSwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengsong.RxSwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -614,10 +641,7 @@
 				DEVELOPMENT_TEAM = 436G22W3WB;
 				INFOPLIST_FILE = RxSwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengsong.RxSwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -634,11 +658,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 436G22W3WB;
 				INFOPLIST_FILE = RxSwiftStudyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengsong.RxSwiftStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -656,11 +676,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 436G22W3WB;
 				INFOPLIST_FILE = RxSwiftStudyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengsong.RxSwiftStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -677,11 +693,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 436G22W3WB;
 				INFOPLIST_FILE = RxSwiftStudyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengsong.RxSwiftStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -698,11 +710,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 436G22W3WB;
 				INFOPLIST_FILE = RxSwiftStudyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengsong.RxSwiftStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

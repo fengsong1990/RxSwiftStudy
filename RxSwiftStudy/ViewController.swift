@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
         
         
+        
         test4()
     }
     
