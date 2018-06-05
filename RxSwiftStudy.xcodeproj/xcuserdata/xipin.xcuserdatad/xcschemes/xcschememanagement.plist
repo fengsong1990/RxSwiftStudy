@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>RxSwiftStudy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+<<<<<<< HEAD:RxSwiftStudy.xcodeproj/xcuserdata/fengsong.xcuserdatad/xcschemes/xcschememanagement.plist
+			<integer>13</integer>
+=======
+			<integer>5</integer>
+>>>>>>> d1d8ab2ab13a0bdf9f2fc151aecbc32f8c684f1e:RxSwiftStudy.xcodeproj/xcuserdata/xipin.xcuserdatad/xcschemes/xcschememanagement.plist
+		</dict>
+	</dict>
+</dict>
+</plist>
